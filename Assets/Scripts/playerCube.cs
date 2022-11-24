@@ -1,37 +1,54 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class playerCube : MonoBehaviour
 {
+    public bool autoMove;
     private float verticalInput;
     private float horizontalInput;
     bool jumpKeyWasPressed;
     private Rigidbody rigidBodyComponent;
+    int jumpsRemaining;
 
-    // Start is called before the first frame update
     void Start()
     {
         rigidBodyComponent = GetComponent<Rigidbody>();
     }
-    // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0)
         {
             jumpKeyWasPressed = true;
+            jumpsRemaining -= 1;
         }
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
     }
     private void FixedUpdate()
     {
-        //rigidBodyComponent.velocity = new Vector3(horizontalInput, rigidBodyComponent.velocity.y, 4f);
-        rigidBodyComponent.velocity = new Vector3(horizontalInput, rigidBodyComponent.velocity.y, verticalInput*3);
+        if(autoMove == true)
+        {
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * 2.4f, rigidBodyComponent.velocity.y, 7f);
+        }
+        else 
+        { 
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * 2.4f, rigidBodyComponent.velocity.y, verticalInput*7);
+        }
         if(jumpKeyWasPressed == true)
         {
-            GetComponent<Rigidbody>().AddForce(Vector3.up * 5f, ForceMode.VelocityChange);
+            jump();
             jumpKeyWasPressed = false;
+        }
+    }
+    private void jump()
+    {
+        GetComponent<Rigidbody>().AddForce(Vector3.up * 6f, ForceMode.VelocityChange);
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 6)
+        {
+            Destroy(other.gameObject);
+            jumpsRemaining++;
         }
     }
 }
