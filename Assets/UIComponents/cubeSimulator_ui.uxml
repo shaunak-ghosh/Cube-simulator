@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="False">
+    <ui:VisualElement>
+        <ui:VisualElement name="Container" style="align-items: center; justify-content: flex-end; flex-basis: initial; opacity: 0.91; display: flex; visibility: visible; overflow: visible;">
+            <ui:Button text="Button" display-tooltip-when-elided="true" />
+            <ui:Button text="Button" display-tooltip-when-elided="true" style="-unity-text-align: middle-right;" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>
