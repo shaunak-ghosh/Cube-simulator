@@ -5,12 +5,11 @@ using UnityEngine;
 public class playerCube : MonoBehaviour
 {
     public bool autoMove;
-    private float verticalInput;
-    private float horizontalInput;
-    bool jumpKeyWasPressed;
+    private float verticalInput, horizontalInput;
+    bool jumpKeyPressed;
     private Rigidbody rigidBodyComponent;
     int jumpsRemaining;
-    float defaultSpeed = 2.4f;
+    float defaultSpeedY = 7f, defaultSpeedX = 2.4f, normalSpeedY, speedCoolDown; //normal speed
 
     void Start()
     {
@@ -18,28 +17,35 @@ public class playerCube : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && jumpsRemaining > 0)
+        if (Input.GetKeyDown(KeyCode.UpArrow)&& jumpsRemaining > 0)
         {
-            jumpKeyWasPressed = true;
+            jumpKeyPressed = true;
             jumpsRemaining -= 1;
+            Debug.Log("Jumps remaining" + jumpsRemaining);
+        }
+        if (Input.GetKeyDown(KeyCode.Space)&& jumpsRemaining > 0)
+        {
+            jumpKeyPressed = true;
+            jumpsRemaining -= 1;
+            Debug.Log("Jumps remaining" + jumpsRemaining);
         }
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
     }
     private void FixedUpdate()
     {
-        if(autoMove == true)
+        if (autoMove == true)
         {
-            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeed, rigidBodyComponent.velocity.y, 7f);
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, defaultSpeedY);
         }
-        else 
-        { 
-            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeed, rigidBodyComponent.velocity.y, verticalInput*7);
+        else
+        {
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, verticalInput * defaultSpeedY);
         }
-        if(jumpKeyWasPressed == true)
+        if (jumpKeyPressed == true)
         {
             jump();
-            jumpKeyWasPressed = false;
+            jumpKeyPressed = false;
         }
     }
     private void jump()
@@ -49,18 +55,22 @@ public class playerCube : MonoBehaviour
     }
     private void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.layer == 6)
+        if (other.gameObject.layer == 6)
         {
-            Destroy(other.gameObject);//not needed!
-            jumpsRemaining++; 
+            Destroy(other.gameObject);
+            jumpsRemaining++;
         }
-        if(other.gameObject.layer == 7)
+        if (other.gameObject.layer == 7)
         {
-            defaultSpeed = 3.0f;
-            speedUpTimer();
+            defaultSpeedY = 3.0f;
+            speedBoost();
+        }
+        if (other.gameObject.layer == 8)
+        {
+            rigidBodyComponent.velocity = new Vector3(0,0,0);
         }
     }
-    private void speedUpTimer()
+    private void speedBoost()
     {
         throw new NotImplementedException();
     }
