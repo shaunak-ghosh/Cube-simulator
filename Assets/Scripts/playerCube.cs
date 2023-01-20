@@ -1,15 +1,13 @@
-using System;
-using System.Threading;
 using UnityEngine;
 
 public class playerCube : MonoBehaviour
 {
     public bool autoMove;
-    private float verticalInput, horizontalInput;
-    bool jumpKeyPressed;
+    private float verticalInput, horizontalInput, timeRemaining = 10;
+    bool jumpKeyPressed, boost = false;
     private Rigidbody rigidBodyComponent;
     int jumpsRemaining;
-    float defaultSpeedY = 7f, defaultSpeedX = 2.4f, normalSpeedY, speedCoolDown; //normal speed
+    float defaultSpeedZ = 7f, defaultSpeedX = 2.4f; //z is forward and x is sideways
 
     void Start()
     {
@@ -17,41 +15,48 @@ public class playerCube : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.UpArrow)&& jumpsRemaining > 0)
+        //bug not fixed yet. Check collision with ground
+        if ((Input.GetKeyDown(KeyCode.UpArrow) || Input.GetKeyDown(KeyCode.Space)) && jumpsRemaining > 0 && GetComponent<Transform>().position.y <= 0.9973934)
         {
             jumpKeyPressed = true;
             jumpsRemaining -= 1;
-            Debug.Log("Jumps remaining" + jumpsRemaining);
-        }
-        if (Input.GetKeyDown(KeyCode.Space)&& jumpsRemaining > 0)
-        {
-            jumpKeyPressed = true;
-            jumpsRemaining -= 1;
+            jump();
             Debug.Log("Jumps remaining" + jumpsRemaining);
         }
         verticalInput = Input.GetAxis("Vertical");
         horizontalInput = Input.GetAxis("Horizontal");
+        if (boost == true)
+        {
+            if (timeRemaining > 1)
+            {
+                Debug.Log("Timer is running" + timeRemaining);
+                timeRemaining -= Time.deltaTime;
+            }
+            else if (timeRemaining < 1)
+            {
+                Debug.Log("Timer has run out");
+                boost = false;
+                timeRemaining = 10;
+                defaultSpeedZ= 7f;
+            }
+        }
     }
     private void FixedUpdate()
     {
         if (autoMove == true)
         {
-            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, defaultSpeedY);
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, defaultSpeedZ);
         }
         else
         {
-            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, verticalInput * defaultSpeedY);
-        }
-        if (jumpKeyPressed == true)
-        {
-            jump();
-            jumpKeyPressed = false;
+            rigidBodyComponent.velocity = new Vector3(horizontalInput * defaultSpeedX, rigidBodyComponent.velocity.y, verticalInput * defaultSpeedZ);
         }
     }
     private void jump()
     {
         GetComponent<Rigidbody>().AddForce(Vector3.up * 6f, ForceMode.VelocityChange);
         Debug.Log("Jumps remaining: " + jumpsRemaining);
+        jumpKeyPressed = false;
     }
     private void OnTriggerEnter(Collider other)
     {
@@ -62,16 +67,18 @@ public class playerCube : MonoBehaviour
         }
         if (other.gameObject.layer == 7)
         {
-            defaultSpeedY = 3.0f;
+            Destroy(other.gameObject);
             speedBoost();
         }
-        if (other.gameObject.layer == 8)
+        if (other.gameObject.layer == 8 && GetComponent<Transform>().position.y == 291.78)
         {
-            rigidBodyComponent.velocity = new Vector3(0,0,0);
+            defaultSpeedX = 0;
+            defaultSpeedZ = 0;
         }
     }
     private void speedBoost()
     {
-        throw new NotImplementedException();
+        boost = true;
+        defaultSpeedZ = 14f;
     }
 }
