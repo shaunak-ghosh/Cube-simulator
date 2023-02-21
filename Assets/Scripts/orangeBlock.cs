@@ -6,7 +6,6 @@ public class orangeBlock : MonoBehaviour
     [SerializeField] float speed;
 
     private Vector3 startingPosition;
-
     // Start is called before the first frame update
     void Start()
     {
