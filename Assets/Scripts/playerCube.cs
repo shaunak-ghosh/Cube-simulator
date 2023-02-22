@@ -79,6 +79,10 @@ public class playerCube : MonoBehaviour
         {
             jumpable = true;
         }
+        if(other.gameObject.tag == "orangeCube")
+        {
+            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+        }
     }
     private void speedBoost()
     {
