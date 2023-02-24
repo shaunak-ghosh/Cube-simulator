@@ -79,9 +79,10 @@ public class playerCube : MonoBehaviour
         {
             jumpable = true;
         }
-        if(other.gameObject.tag == "orangeCube")
+        if(other.gameObject.layer == 10)
         {
-            GetComponent<Rigidbody>().constraints = RigidbodyConstraints.FreezePosition;
+            defaultSpeedZ = 0;
+            defaultSpeedX = 0;
         }
     }
     private void speedBoost()

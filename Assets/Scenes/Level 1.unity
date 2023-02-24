@@ -251,7 +251,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 1
+  m_CollisionDetection: 2
 --- !u!1 &67709832
 GameObject:
   m_ObjectHideFlags: 0
@@ -362,7 +362,7 @@ GameObject:
   - component: {fileID: 77841378}
   - component: {fileID: 77841377}
   - component: {fileID: 77841375}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (46)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -472,7 +472,7 @@ GameObject:
   - component: {fileID: 83382659}
   - component: {fileID: 83382658}
   - component: {fileID: 83382656}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -618,7 +618,7 @@ GameObject:
   - component: {fileID: 98171149}
   - component: {fileID: 98171148}
   - component: {fileID: 98171151}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -728,7 +728,7 @@ GameObject:
   - component: {fileID: 140105479}
   - component: {fileID: 140105478}
   - component: {fileID: 140105476}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (32)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -838,7 +838,7 @@ GameObject:
   - component: {fileID: 141997421}
   - component: {fileID: 141997420}
   - component: {fileID: 141997418}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (26)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -948,7 +948,7 @@ GameObject:
   - component: {fileID: 148655013}
   - component: {fileID: 148655012}
   - component: {fileID: 148655010}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (36)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1058,7 +1058,7 @@ GameObject:
   - component: {fileID: 179262394}
   - component: {fileID: 179262393}
   - component: {fileID: 179262391}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (57)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1168,7 +1168,7 @@ GameObject:
   - component: {fileID: 192796080}
   - component: {fileID: 192796079}
   - component: {fileID: 192796077}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (17)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1278,7 +1278,7 @@ GameObject:
   - component: {fileID: 211622530}
   - component: {fileID: 211622529}
   - component: {fileID: 211622527}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (34)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1485,7 +1485,7 @@ GameObject:
   - component: {fileID: 270713182}
   - component: {fileID: 270713181}
   - component: {fileID: 270713179}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (25)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1692,7 +1692,7 @@ GameObject:
   - component: {fileID: 332005273}
   - component: {fileID: 332005272}
   - component: {fileID: 332005270}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (54)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2161,7 +2161,7 @@ GameObject:
   - component: {fileID: 460848626}
   - component: {fileID: 460848625}
   - component: {fileID: 460848623}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (40)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2271,7 +2271,7 @@ GameObject:
   - component: {fileID: 469065421}
   - component: {fileID: 469065420}
   - component: {fileID: 469065418}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (39)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2381,7 +2381,7 @@ GameObject:
   - component: {fileID: 483512275}
   - component: {fileID: 483512274}
   - component: {fileID: 483512272}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2491,7 +2491,7 @@ GameObject:
   - component: {fileID: 488303252}
   - component: {fileID: 488303251}
   - component: {fileID: 488303249}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (18)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2601,7 +2601,7 @@ GameObject:
   - component: {fileID: 496462594}
   - component: {fileID: 496462593}
   - component: {fileID: 496462591}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2808,7 +2808,7 @@ GameObject:
   - component: {fileID: 516934475}
   - component: {fileID: 516934474}
   - component: {fileID: 516934472}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (58)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3112,7 +3112,7 @@ GameObject:
   - component: {fileID: 586053517}
   - component: {fileID: 586053516}
   - component: {fileID: 586053519}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3222,7 +3222,7 @@ GameObject:
   - component: {fileID: 594821102}
   - component: {fileID: 594821101}
   - component: {fileID: 594821104}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3332,7 +3332,7 @@ GameObject:
   - component: {fileID: 625790089}
   - component: {fileID: 625790088}
   - component: {fileID: 625790086}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (47)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3442,7 +3442,7 @@ GameObject:
   - component: {fileID: 638405241}
   - component: {fileID: 638405240}
   - component: {fileID: 638405238}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (33)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3552,7 +3552,7 @@ GameObject:
   - component: {fileID: 671756301}
   - component: {fileID: 671756300}
   - component: {fileID: 671756298}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (43)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3662,7 +3662,7 @@ GameObject:
   - component: {fileID: 686221810}
   - component: {fileID: 686221809}
   - component: {fileID: 686221807}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3963,7 +3963,7 @@ GameObject:
   - component: {fileID: 744506201}
   - component: {fileID: 744506200}
   - component: {fileID: 744506198}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (37)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4187,7 +4187,7 @@ GameObject:
   - component: {fileID: 752574363}
   - component: {fileID: 752574362}
   - component: {fileID: 752574360}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (49)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4297,7 +4297,7 @@ GameObject:
   - component: {fileID: 762250626}
   - component: {fileID: 762250625}
   - component: {fileID: 762250623}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (13)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4407,7 +4407,7 @@ GameObject:
   - component: {fileID: 841856004}
   - component: {fileID: 841856003}
   - component: {fileID: 841856001}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (42)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4517,7 +4517,7 @@ GameObject:
   - component: {fileID: 862607579}
   - component: {fileID: 862607578}
   - component: {fileID: 862607576}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (45)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4627,7 +4627,7 @@ GameObject:
   - component: {fileID: 870408093}
   - component: {fileID: 870408092}
   - component: {fileID: 870408090}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (14)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4737,7 +4737,7 @@ GameObject:
   - component: {fileID: 874144409}
   - component: {fileID: 874144408}
   - component: {fileID: 874144406}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (22)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4847,7 +4847,7 @@ GameObject:
   - component: {fileID: 888926323}
   - component: {fileID: 888926322}
   - component: {fileID: 888926320}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (60)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -4957,7 +4957,7 @@ GameObject:
   - component: {fileID: 909023557}
   - component: {fileID: 909023556}
   - component: {fileID: 909023554}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (61)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5164,7 +5164,7 @@ GameObject:
   - component: {fileID: 944502501}
   - component: {fileID: 944502500}
   - component: {fileID: 944502498}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (28)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5358,7 +5358,7 @@ GameObject:
   - component: {fileID: 963532658}
   - component: {fileID: 963532657}
   - component: {fileID: 963532655}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (35)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -5468,7 +5468,7 @@ GameObject:
   - component: {fileID: 1015322907}
   - component: {fileID: 1015322906}
   - component: {fileID: 1015322904}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (29)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6054,7 +6054,7 @@ GameObject:
   - component: {fileID: 1221256903}
   - component: {fileID: 1221256902}
   - component: {fileID: 1221256900}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (38)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6164,7 +6164,7 @@ GameObject:
   - component: {fileID: 1243323727}
   - component: {fileID: 1243323726}
   - component: {fileID: 1243323724}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (21)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6371,7 +6371,7 @@ GameObject:
   - component: {fileID: 1342625116}
   - component: {fileID: 1342625115}
   - component: {fileID: 1342625113}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (20)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6675,7 +6675,7 @@ GameObject:
   - component: {fileID: 1441887292}
   - component: {fileID: 1441887291}
   - component: {fileID: 1441887289}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (30)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6785,7 +6785,7 @@ GameObject:
   - component: {fileID: 1448408897}
   - component: {fileID: 1448408896}
   - component: {fileID: 1448408899}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -6895,7 +6895,7 @@ GameObject:
   - component: {fileID: 1450718049}
   - component: {fileID: 1450718048}
   - component: {fileID: 1450718046}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (27)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7153,7 +7153,7 @@ GameObject:
   - component: {fileID: 1516510864}
   - component: {fileID: 1516510863}
   - component: {fileID: 1516510861}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7263,7 +7263,7 @@ GameObject:
   - component: {fileID: 1624041000}
   - component: {fileID: 1624040999}
   - component: {fileID: 1624040997}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (23)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7373,7 +7373,7 @@ GameObject:
   - component: {fileID: 1639758355}
   - component: {fileID: 1639758354}
   - component: {fileID: 1639758352}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (56)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7483,7 +7483,7 @@ GameObject:
   - component: {fileID: 1647451367}
   - component: {fileID: 1647451366}
   - component: {fileID: 1647451364}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (31)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7593,7 +7593,7 @@ GameObject:
   - component: {fileID: 1661674664}
   - component: {fileID: 1661674663}
   - component: {fileID: 1661674666}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: orangeBlock
   m_TagString: orangeCube
   m_Icon: {fileID: 0}
@@ -7623,7 +7623,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1661674659}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -7802,7 +7802,7 @@ GameObject:
   - component: {fileID: 1734577675}
   - component: {fileID: 1734577674}
   - component: {fileID: 1734577672}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (52)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -7912,7 +7912,7 @@ GameObject:
   - component: {fileID: 1801578769}
   - component: {fileID: 1801578768}
   - component: {fileID: 1801578766}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (44)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8022,7 +8022,7 @@ GameObject:
   - component: {fileID: 1832322563}
   - component: {fileID: 1832322562}
   - component: {fileID: 1832322560}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (16)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8229,7 +8229,7 @@ GameObject:
   - component: {fileID: 1882340192}
   - component: {fileID: 1882340191}
   - component: {fileID: 1882340189}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (50)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8372,7 +8372,7 @@ GameObject:
   - component: {fileID: 1933348691}
   - component: {fileID: 1933348690}
   - component: {fileID: 1933348688}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (55)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8482,7 +8482,7 @@ GameObject:
   - component: {fileID: 1951194065}
   - component: {fileID: 1951194064}
   - component: {fileID: 1951194062}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (59)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8592,7 +8592,7 @@ GameObject:
   - component: {fileID: 2000279888}
   - component: {fileID: 2000279887}
   - component: {fileID: 2000279885}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (24)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8702,7 +8702,7 @@ GameObject:
   - component: {fileID: 2003109420}
   - component: {fileID: 2003109419}
   - component: {fileID: 2003109417}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (15)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8909,7 +8909,7 @@ GameObject:
   - component: {fileID: 2039828264}
   - component: {fileID: 2039828263}
   - component: {fileID: 2039828261}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (41)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9019,7 +9019,7 @@ GameObject:
   - component: {fileID: 2054367644}
   - component: {fileID: 2054367643}
   - component: {fileID: 2054367641}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (19)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9323,7 +9323,7 @@ GameObject:
   - component: {fileID: 2123139567}
   - component: {fileID: 2123139566}
   - component: {fileID: 2123139564}
-  m_Layer: 9
+  m_Layer: 10
   m_Name: barrierCube (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}

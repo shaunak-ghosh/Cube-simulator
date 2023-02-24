@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class orangeBlock : MonoBehaviour
@@ -16,5 +17,13 @@ public class orangeBlock : MonoBehaviour
         Vector3 v = startingPosition;
         v.x += distanceToCover * Mathf.Sin(Time.time * speed);
         transform.position = v;
+    }
+    void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.layer == 11)
+        {
+            distanceToCover = 0;
+            speed = 0;
+        }
     }
 }
